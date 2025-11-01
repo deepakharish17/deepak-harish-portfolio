@@ -959,3 +959,61 @@ body {
     overflow-x: hidden;
   }
 }
+/* --- Fix About Section for Mobile --- */
+@media (max-width: 768px) {
+
+  /* General layout fixes */
+  .about {
+    margin: 100px 20px;
+    text-align: center;
+  }
+
+  .about-container {
+    flex-direction: column !important;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+  }
+
+  /* Text section adjustments */
+  .info-about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .about-info p {
+    font-size: 14px;
+    line-height: 1.5;
+    padding: 0 10px;
+  }
+
+  /* Fix image alignment */
+  .about img {
+    width: 80%;
+    max-width: 250px;
+    height: auto;
+    border-radius: 12px;
+    border: 1px solid #000;
+    margin: 10px 0 20px 0;
+    position: relative;
+    bottom: 0;
+  }
+
+  /* Cards fix */
+  .card {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    width: 100%;
+  }
+
+  .c1 {
+    width: 90%;
+    max-width: 320px;
+    text-align: center;
+  }
+}
+
